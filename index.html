@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+<!--   <link rel="stylesheet" media="screen and (min-width: 992px)" href="style.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)" href="tablet.css"/>
+  <link rel="stylesheet" media="screen and (min-width: 320px) and (max-width: 767px)" href="mobile.css"/> -->
+  <title>Promogim Immobilier</title>
+  <!--Maquette commencée le 23/04 à 19h sans Bootstrap-->
+</head>
+<body>
+  <header>
+    <div class="head" id="head1">
+      <img src="svg/logo.svg" id="logo"/>
+      <p id="city">Villemomble (93)</p>
+      <div id="adressContent">
+        <img src="svg/map.svg" id="svgMap">
+        <p id="adress">85, Boulevard d'Aulnay</p>
+      </div>
+      <p id="headDescription">Du studio au 4 pièces</p>
+      <div class="" id="prix">
+        <p id="prix1">à partir de</p>
+        <p id="prix2">XXX€/mois*</p>
+      </div>
+    </div>
+
+    <div class="head" id="head2">
+      <img src="/pictures/perspective.jpg" alt="Photo de la résidence" id="picHeader"/>
+       <div class="div1pic">TRAVAUX EN COURS</div>
+        <div class="div2pic">
+          <img src="svg/timer.svg" id="svgTimer"/>
+          <p id="textBluePic">Livraison 2ème trimestre 2022</p>
+        </div>
+    </div>
+  </header>
+  <main>
+    <section id="section1">
+      <div id="h1Div">
+        <h1 id="h1Text">Villa Coquetiers : Un emplacement pratique, tranquille, et accessible à moins de 300m* du tramway</h1>
+      </div>
+      <div id="list">
+        <ul>
+          <li><img src="svg/check.svg" class="listIcon"/>A 300m du tram</li>
+          <li><img src="svg/check.svg" class="listIcon"/>Quartier des Coquetiers</li>
+          <li><img src="svg/check.svg" class="listIcon"/>Proche des commerces et services</li>
+        </ul>
+      </div>
+      <p class="description">Dans le quartier pavillonaire des Coquetiers, la résidence prend place à proximité des commerces, services et établissements scolaires. La gare du RER E se rejoint facilement par le tram situé à 4 minutes* seulement de la résidence.</p>
+      <p class="description mt-4">Entourée d'un jardin, la Villa Coquetiers s'élève sur 2 bâtiments composés d'un nombre réduit d'appartements lumineux s'ouvrant sur des baies vitrées donnant sur un balcon, une terrasse ou une loggia.</p>
+    </section>
+    <aside>
+      <form action="">
+        <h2>Devenez propriétaire<br>à Villemomble</h2>
+        <p class="radioBtn">Civilité*
+          <input type="radio" id="gender1" name="gender" value="female">
+          <label for="gender1">Madame</label>
+          <input type="radio" id="gender2" name="gender" value="male">
+          <label for="gender2">Monsieur</label>
+        </p>
+        <input type="text" id="name" placeholder="Nom*" required/>
+        <input type="text" id="firstname" placeholder="Prénom*" required/>
+        <input type="tel" id="telephone" placeholder="Téléphone*" required/>
+        <input type="string" id="postCode" placeholder="Code postal*" required/>
+        <input type="email" id="email" placeholder="Email*" required/>
+        <p class="radioBtn">Je souhaite*             
+          <input type="radio" id="choice1" name="choice" value="habiter">
+          <label for="choice1">Habiter</label>                          
+          <input type="radio" id="choice2" name="choice" value="investir">
+          <label for="choice2">Investir</label>
+        </p>
+        <textarea name="message" id="message" placeholder="Votre message (400 caractères max)" wrap maxlength="400"></textarea>
+        <p>
+          <input type="checkbox" name="confirm" id="confirm">
+          <label for="confirm" class="textConfirm">En cochant cette case, je consens à recevoir des offres commerciales et des informations sur les produits et services de Promogim - <a href="">Mentions sur la protection des données personnelles.</a></label>
+        </p>
+        <div id="containerSubmit">
+          <button type="submit" id="submitBtn"><img src="svg/arrow.svg" id="svgArrow">Envoyer mon message</button>
+          <p class="textSubmit">* Champs obligatoires</p>
+        </div>
+      </form>
+    </aside>
+    <section>
+      <div id="divPicture2">
+        <img src="pictures/visuel.jpg" alt="Photo d'un appartement" id="picture2"/>
+      </div>
+    </section>
+  </main>
+  <footer class="conditions">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, explicabo cupiditate magni quidem eum officia officiis quibusdam cum, nemo, quia nisi aliquam facere? Deserunt, quam aspernatur voluptas molestiae eveniet consequuntur?
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae libero, sit autem aut blanditiis voluptates! Quos delectus autem aspernatur, adipisci, itaque mollitia perferendis repellat eos sapiente ipsum illo, labore numquam.
+    Cum beatae, dolore nobis voluptates veniam necessitatibus explicabo maxime placeat natus eum reprehenderit, pariatur sit molestiae tempora aperiam eaque officiis minima laboriosam quod architecto dignissimos, consectetur autem fuga. Quas, dignissimos!
+    Aspernatur, perferendis minus a laudantium in perspiciatis doloremque rem, eaque voluptate consectetur vel eius reiciendis animi cumque unde error! Repellat, quae deleniti. Possimus, aperiam consequatur modi omnis doloribus hic distinctio!
+  </footer>
+</body>
+</html>
