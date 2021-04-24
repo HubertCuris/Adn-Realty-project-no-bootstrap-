@@ -35,12 +35,7 @@
           <p id="textBluePic">Livraison 2ème trimestre 2022</p>
         </div>
       </div>
-    </div>       
-    <!-- <div class="div1pic">TRAVAUX EN COURS</div>
-    <div class="div2pic">
-      <img src="svg/timer.svg" id="svgTimer"/>
-      <p id="textBluePic">Livraison 2ème trimestre 2022</p>
-    </div> -->
+    </div>
   </header>
   <main>
     <section id="section1">
@@ -71,21 +66,22 @@
         <input type="tel" id="telephone" placeholder="Téléphone*" required/>
         <input type="string" id="postCode" placeholder="Code postal*" required/>
         <input type="email" id="email" placeholder="Email*" required/>
-        <p class="radioBtn">Je souhaite*             
+        <p class="radioBtn">Je souhaite*        
           <input type="radio" id="choice1" name="choice" value="habiter">
           <label for="choice1">Habiter</label>                          
           <input type="radio" id="choice2" name="choice" value="investir">
           <label for="choice2">Investir</label>
         </p>
-        <textarea name="message" id="message" placeholder="Votre message (400 caractères max)" wrap maxlength="400"></textarea>
-        <p>
-          <input type="checkbox" name="confirm" id="confirm">
+        <textarea name="message" id="message" placeholder="Votre message" wrap maxlength="400"></textarea>
+        <p id="confirm">
+          <input type="checkbox" name="confirm" id="confirmCheckbox">
           <label for="confirm" class="textConfirm">En cochant cette case, je consens à recevoir des offres commerciales et des informations sur les produits et services de Promogim - <a href="">Mentions sur la protection des données personnelles.</a></label>
         </p>
-        <div id="containerSubmit">
-          <button type="submit" id="submitBtn"><img src="svg/arrow.svg" id="svgArrow">Envoyer mon message</button>
-          <p class="textSubmit">* Champs obligatoires</p>
-        </div>
+        <button type="submit" id="submitBtn">
+          <img src="svg/arrow.svg" id="svgArrow">
+          <p>Envoyer mon message</p>
+        </button>
+        <p class="textSubmit">* Champs obligatoires</p>
       </form>
     </aside>
     <section>

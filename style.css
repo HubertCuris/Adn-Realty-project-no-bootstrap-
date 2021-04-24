@@ -11,10 +11,10 @@ body{
     font-family: 'Open Sans', sans-serif;  
     padding-left: 75px;
 }
-#city, .div2pic, li{
+#city, .div2pic, li, h2{
     font-weight: 600;
 }
-#prix1, .div1pic, #h1Text, input, textarea, .description{
+#prix1, .div1pic, #h1Text, input, textarea, .description, input, #message{
     font-weight: 400;
 }
 #adress, #headDescription, #prix2{
@@ -32,7 +32,6 @@ header{
     display: inline-block;
 }
 #head1{
-    background-color: #8395a7;
     width: 35%;
 }
 #head2{
@@ -53,7 +52,7 @@ header{
     padding: 5px;
     display: flex;
     margin-bottom: 80px;
-    width: fit-content;
+    width: max-content;
 }
 #svgMap{
     width: 15px;
@@ -107,7 +106,7 @@ header{
     position: relative;
     padding: 8px 20px;
     top: -220px;
-    left: 500px;
+    left: 400px;
     box-shadow: 0.5px 0.5px 1px rgb(29, 29, 29);
     font-size: 14px;
 }
@@ -117,8 +116,8 @@ header{
     display: inline-flex;
     position: relative;
     padding: 10px 10px;
-    top: 200px;
-    right: 200px;
+    top: 230px;
+    right: 230px;
     box-shadow: 0.5px 0.5px 1px rgb(29, 29, 29);
     font-size: 18px; 
 }
@@ -152,13 +151,16 @@ main{
 }
 li{
     list-style: none;
+    font-size: 22px;
 }
 .listIcon{
     width:16px;
-    margin: 0 10px 5px 0;
+    margin-right: 10px;
 }
 .description{
-    margin-right: 70px;
+    margin-right: 200px;
+    text-align: left;
+    font-size: 22px;
 }
     /* FORM */
 aside{
@@ -167,98 +169,92 @@ width: 30%;
 }
 form{
     position: relative;
-    top: -100px;
+    top: -120px;
     background-color:#145a97;
     color: white;
     margin-right: 60px !important;
     box-shadow: -1px 3px 10px rgb(112, 111, 111);
     text-align: center;
+    padding: 25px
 }
-
-/* CHECK IT */
-/* h2{
+h2{
     font-size: 28px;
-    margin-top: 20px;
-    font-weight: 600;
-} */
-/* #message{
-    width: 80%;
-    height: 80px;
-} */
-/* __________  */
-p.radioBtn{
+    margin-bottom: 25px;
+}
+.radioBtn{
     margin: 10px;
 }
-#name, #firstname, #email, #telephone, #postCode, #message{
+#gender1, #gender2, #choice1, #choice2{
+    margin-left: 15px;
+    font-size: 16px;
+}
+input, textarea, #message{ 
+    padding-left: 15px;
+}
+#message{
+    height: 80px;
+    font-size: 16px;
+    margin: 15px auto;
+    padding-top: 10px;
+}
+#name, #firstname, #email, #telephone, #postCode{
     height: 40px;
     margin: 15px auto;
+    font-size: 16px;
 }
-#name, #firstname, #email{
+#name, #firstname, #email, #message{
     width: 80%;  
 }
 #telephone, #postCode{
-    width: 40%;
+    width: 38%;
+}
+#telephone{
+    margin-right: 10px;
 }
 input::placeholder, textarea::placeholder{
     color: #145a97;
 }
 
-/* .radioBtn{
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: 500;
-  } */
-
 /* CHECK ALSO */
 
-#checkbox{ 
+#confirm{ 
     display: flex;
     width: 80%;
     margin: 15px auto;
-  }
-  input, textarea{ 
-    padding-left: 10px;
-  }
-  .textConfirm, .textSubmit{
+}
+#confirmCheckbox{
+    margin: 0 10px 35px 0;
+}
+.textConfirm{
+    text-align:left;
+} 
+.textConfirm, .textSubmit{
     font-size: 10px;
-  }
-  #contentSubmit{
-    margin-bottom: 20px;
-  }
-  #containerSubmit{
+}
+#submitBtn{
     display: flex;
     justify-content: center;
     width: 80%;
     height: 50px;
-    margin: auto;
+    margin: 20px auto;
     background-color: #d51125;
     font-size: 18px;
-  }
-  #submitBtn{
     border: none;
-    margin-right: 20px;
     text-transform: uppercase;
-    background: none;
     color: white;
-    font-size: 18px;
-  }
-  #svgArrow{
-    width: 40px;
-    margin-right: 30px;
-  }
-  .textSubmit{ 
-    margin: 10px 200px 0 0px
-  }
-  .textConfirm{
-    text-align:left;
-  }
-  #confirm{
-    margin: 4px;
-  }
-
-/* CHECK */
-
+    padding: 8px 10px;
+    cursor: pointer;
+}
+#svgArrow{
+    width: 35px;
+    margin: auto;
+}
+#submitBtn > p{
+    margin: auto;
+}
+.textSubmit{ 
+    margin: -5px 120px 0 0px;
+}
     /* Picture 2 */
 #divPicture2{
     width: 90%;
@@ -273,6 +269,7 @@ input::placeholder, textarea::placeholder{
 }
 /* Footer */
 .conditions{
-    margin-bottom: 5%;
+    margin: 0 200px 50px 0;
     font-size: 12px;
+    text-align: left;
 }
