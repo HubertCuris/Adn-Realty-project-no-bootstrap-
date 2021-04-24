@@ -20,7 +20,6 @@ body{
 #adress, #headDescription, #prix2{
     font-weight: 700
 }
-/* write here the font-weight */
 .description, li, h1, #city, #headDescription, .conditions{
     color: #002A5C;
 }
@@ -28,13 +27,16 @@ body{
     /* Display */
 .head{
     display: inline-block;
+    margin-top: -50px;
 }
 #head1{
     background-color: #8395a7;
     width: 35%;
 }
 #head2{
-    width: 65%;
+    width: 64%;
+    background-color: aquamarine;   
+    overflow: hidden;
 }
     /*head1 Content*/
 #logo{
@@ -85,17 +87,18 @@ body{
 }
 
 /*head2 Content*/
-/* may cause problems */
-
-/* #head2{
-    overflow: hidden;
-} */
-#picHeader{
-    top: 0;
-    right: 0;
-    position: absolute;
-    width: 60%;
-    /* width: 900px; */
+.containerPic1{
+    z-index: 1;
+    /* H2 width 64% */
+    position: relative;
+    resize: both;
+    width: 100%;
+    height: 100%;
+    padding: 250px;
+    background-image: url(pictures/perspective.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .div1pic{
     background-color: #d51125;
@@ -104,7 +107,7 @@ body{
     position: relative;
     padding: 8px 20px;
     top: -500px;
-    left: 1000px;
+    left: 950px;
     box-shadow: 0.5px 0.5px 1px rgb(29, 29, 29);
     font-size: 14px;
 }
