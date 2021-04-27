@@ -244,6 +244,17 @@ input::placeholder, textarea::placeholder{
     width: 35px;
     margin-left: 10px;
 }
+#submitBtn:hover{
+    color: #d51125;
+    background-color: rgb(255, 255, 255);
+}
+#submitBtn:hover #svgArrow{
+    /* margin: auto; */
+    width: 32px;
+    height: 32px;
+    border: 2px solid #145a97;
+    border-radius: 20px;
+}
 #submitBtn > p{
     margin: auto;
     white-space: nowrap;
