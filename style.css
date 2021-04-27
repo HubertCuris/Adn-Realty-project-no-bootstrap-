@@ -56,6 +56,7 @@ header{
 #svgMap{
     width: 15px;
     margin-right: 5px;
+    vertical-align: sub;
 }
 #adress{
     font-size: 16px;
@@ -80,7 +81,7 @@ header{
 }
 #prix1{
     font-size: 11px;
-    margin-bottom: -8px;
+    margin-bottom: -5px;
 }
 #prix2{
     font-size: 38px;
@@ -182,7 +183,11 @@ h2{
     margin-bottom: 25px;
 }
 .radioBtn{
-    margin: 10px;
+    display: flex;
+    margin: 10px 0;
+    justify-content: center;
+    align-items: center;
+    vertical-align: sub;
 }
 #gender1, #gender2, #choice1, #choice2{
     margin-left: 15px;
@@ -196,8 +201,10 @@ input, textarea, #message{
     font-size: 16px;
     margin: 15px 0;
     padding-top: 10px;
+    border: none;
+    height: 80px;
 }
-#name, #firstname, #email, #telephone, #postCode, #message{
+#name, #firstname, #email, #telephone, #postCode{
     height: 40px;
     margin: 10px 0;
     font-size: 16px;
@@ -249,7 +256,6 @@ input::placeholder, textarea::placeholder{
     background-color: rgb(255, 255, 255);
 }
 #submitBtn:hover #svgArrow{
-    /* margin: auto; */
     width: 32px;
     height: 32px;
     border: 2px solid #145a97;
@@ -317,7 +323,7 @@ input[type='radio']:checked:after {
     }
     .radioBtn{
         display: flex;
-        margin: 10px 0;
+        margin: 10px -2px;
     }
     .textSubmit{
         margin: 7px 150px 0 0px;
@@ -355,7 +361,6 @@ input[type='radio']:checked:after {
     }
     .top{
         margin-top: 100px;
-        width: max-content;
     }
     #logo{
         width: 16rem;
@@ -368,6 +373,7 @@ input[type='radio']:checked:after {
     }
     #svgMap{
         width: 14px;
+        vertical-align: sub;
     }
     #adress{
         font-size: 14px;
@@ -477,6 +483,7 @@ input[type='radio']:checked:after {
     #head1{
         display: flex;
         flex-direction: column;
+        padding-top: 20px;
     }
     #head2{
         margin-bottom: 10px;
@@ -486,13 +493,16 @@ input[type='radio']:checked:after {
     }
     .topContainer{
         display: flex;
-        justify-content: space-around; 
         flex-direction: column;
         align-items: center;
-        margin-top: 70px;
+        margin-top: 150px;
     }
-    .top{
-        width: max-content;
+    #top1{
+        order: 2;
+        margin-top: 60px;
+    }
+    #top2{
+        order: 1;
     }
     /* Header */
         /*Head1 */
@@ -507,11 +517,13 @@ input[type='radio']:checked:after {
     }
     #svgMap{
         width: 10px;
+        vertical-align: sub;
     }
     #adress{
         font-size: 12px;
     }
     #adressContent{
+        margin: auto;
         margin-bottom: 50px;
     }
     #headDescription{
@@ -522,13 +534,16 @@ input[type='radio']:checked:after {
     #prix{
         width: 160px;
         height: 60px;
+        margin: auto;
         margin-bottom: 20px;
         padding: 15px 15px;
     }
     #prix1{
         font-size: 11px;
+        margin: 0;
     }
     #prix2{
+        
         font-size: 22px;
     }
     #prix3{
@@ -579,7 +594,7 @@ input[type='radio']:checked:after {
         margin: 20px;
     }
     li{
-        font-size: 18px;
+        font-size: 15px;
     }
     .description{
         margin: 20px auto;
