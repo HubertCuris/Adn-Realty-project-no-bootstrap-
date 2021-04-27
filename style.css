@@ -73,19 +73,21 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 15px;
+    padding: 10px 20px;
     width: 250px;
     height: 80px;
     margin-bottom: 20px;
 }
 #prix1{
     font-size: 11px;
-    margin-bottom: -2px;
+    margin-bottom: -8px;
 }
 #prix2{
     font-size: 38px;
 }
-
+#prix3{
+    font-size: 30px;
+}
 /*head2 Content*/
 .containerPic1{
     position: relative;
@@ -133,7 +135,6 @@ main{
 }
     /* Section */
 #section1{
-    display: block;
     width: 65%;
 }
 #h1Div{
@@ -161,7 +162,6 @@ li{
 }
     /* FORM */
 aside{
-    display: block;
     width: 35%;
 }
 form{
@@ -197,13 +197,11 @@ input, textarea, #message{
     margin: 15px 0;
     padding-top: 10px;
 }
-#name, #firstname, #email, #telephone, #postCode{
+#name, #firstname, #email, #telephone, #postCode, #message{
     height: 40px;
     margin: 10px 0;
     font-size: 16px;
     border: none;
-}
-#name, #firstname, #email, #message{
 }
 #halfInputs{
     display:flex;
@@ -230,7 +228,6 @@ input::placeholder, textarea::placeholder{
 .textConfirm, .textSubmit{
     font-size: 10px;
 }
-/* test */
 #submitBtn{
     display: flex;
     justify-content: center;
@@ -298,6 +295,322 @@ input[type='radio']:checked:after {
     margin: 0 200px 50px 0;
     font-size: 12px;
     text-align: left;
+}
+
+
+/*    MEDIA QUERIES    */
+
+@media (min-width:1281px) and (max-width:1440px) {
+    form{
+        padding: 40px;
+    }
+    .radioBtn{
+        display: flex;
+        margin: 10px 0;
+    }
+    .textSubmit{
+        margin: 7px 150px 0 0px;
+    }
+}
+
+
+
+
+/*   TABLET   */
+@media (min-width:768px) and (max-width:1280px) {
+    /* Content */
+    body{
+        padding: 30px 0 50px 0;
+    }
+    header{
+        flex-flow: column wrap;
+        align-items: center;       
+    }
+    #head1{
+        display: flex;
+        flex-direction: column;
+    }
+    #head2{
+        margin-bottom: 25px;
+    }
+    #head1, #head2{
+        width: 90%;
+    }
+    /* Header */
+        /*Head1 */
+    .topContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .top{
+        margin-top: 100px;
+        width: max-content;
+    }
+    #logo{
+        width: 16rem;
+        margin: auto;
+    }
+    #city{
+        font-size: 34px;
+        font-weight: 700;
+        margin: 0;
+    }
+    #svgMap{
+        width: 14px;
+    }
+    #adress{
+        font-size: 14px;
+    }
+    #headDescription{
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    #prix{
+        width: 200px;
+        height: 80px;
+        margin-bottom: 20px;
+        padding: 5px 20px;
+    }
+    #prix1{
+        font-size: 11px;
+    }
+    #prix2{
+        font-size: 28px;
+    }
+    #prix3{
+        font-size: 20px;
+    }
+        /* Head2 */
+    .containerPic1{
+        width: 90vw;
+        height:60vh;
+        background-position: bottom;
+    }
+    .div1pic{
+        top: 20px;
+        right: 20px;
+    }
+    #svgTimer {
+        width: 15px;
+        margin-right: 5px;
+    }
+    /* Main */
+        /* display */
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #section1, aside{
+        flex: 100%;
+    }
+    #section1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+        /* Section1 */
+    #h1Div{
+        letter-spacing: -2px;
+        margin-bottom: 30px;
+    }
+    #list{
+        margin: 50px;
+    }
+    .description{
+        margin: 20px auto;
+        width: 80%;
+    }
+    /* FORM */
+    aside{
+        padding-top: 30px;
+        order: 3; 
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        margin-top: 200px;
+        width: 50%;
+        margin-right: 0 !important;
+    }
+    /* Picture 2 & footer*/
+    #divPicture2{
+        display: flex;
+        width: 100%;
+    }
+    #picture2{
+        margin: auto;
+    }
+    footer, #picture2{
+        width: 80%;   
+    }
+    .conditions{       
+        text-align: none;
+        margin: auto;
+    }
+}
+
+
+
+
+@media (min-width:320px) and (max-width:790px) {
+    /* Display */
+    body{
+        padding: 30px 0 50px 0;
+    }
+    header{
+        flex-flow: column wrap;
+        align-items: center;       
+    }
+    #head1{
+        display: flex;
+        flex-direction: column;
+    }
+    #head2{
+        margin-bottom: 10px;
+    }
+    #head1, #head2{
+        width: 90%;
+    }
+    .topContainer{
+        display: flex;
+        justify-content: space-around; 
+        margin-top: 70px;
+    }
+    .top{
+        width: max-content;
+    }
+    /* Header */
+        /*Head1 */
+    #logo{
+        width: 14rem;
+        margin: auto;
+    }
+    #city{
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 0;
+    }
+    #svgMap{
+        width: 10px;
+    }
+    #adress{
+        font-size: 12px;
+    }
+    #adressContent{
+        margin-bottom: 30px;
+    }
+    #headDescription{
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    #prix{
+        width: 160px;
+        height: 60px;
+        margin-bottom: 20px;
+        padding: 15px 15px;
+    }
+    #prix1{
+        font-size: 11px;
+    }
+    #prix2{
+        font-size: 22px;
+    }
+    #prix3{
+        font-size: 18px;
+    }
+        /* Head2 */
+    .containerPic1{
+        width: 90vw;
+        height:30vh;
+        background-position: bottom;
+    }
+    #svgTimer {
+        width: 15px;
+        margin-right: 5px;
+    }
+    .div1pic{
+        padding: 6px 10px;
+        top: 10px;
+        right: 20px;
+        font-size: 12px;
+    }
+    .div2pic{
+        padding: 6px 10px;
+        bottom: 10px;
+        left: 10px;
+        font-size: 12px; 
+    }
+    /* Main */
+        /* display */
+    #section1, aside{
+        flex: 100%;
+    }
+    #section1{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+        /* Section1 */
+    #h1Text {
+        font-size: 32px;
+    }
+    #h1Div{
+        margin-top: 50px;
+        letter-spacing: -2px;
+        margin-bottom: 20px;
+    }
+    #list{
+        margin: 20px;
+    }
+    li{
+        font-size: 18px;
+    }
+    .description{
+        margin: 20px auto;
+        width: 80%;
+        font-size: 20px;
+    }
+    /* FORM */
+    aside{
+        padding-top: 20px;
+        order: 3; 
+        display: flex;
+        justify-content: center;
+    }
+    form{
+        margin-top: 200px;
+        width: 90%;
+        padding: 20px;
+        margin-right: 0 !important;
+    }
+    #name, #firstname, #telephone, #postCode, #email{       
+        width: 100%;
+    }
+    #halfInputs{
+        flex-direction: column;
+    }
+    /* Picture 2 & footer*/
+    #divPicture2{
+        display: flex;
+        width: 100%;
+    }
+    #picture2{
+        margin: auto;
+        box-shadow: #002A5C 5px 12px;
+        margin: 30px auto 30px auto;
+        width: 90%;
+    }
+    footer{
+        width: 80%;   
+    }
+    .conditions{       
+        text-align: none;
+        margin: auto;
+        margin-top: -50px;
+    }
 }
 
 /* Test */
