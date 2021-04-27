@@ -385,7 +385,6 @@ input[type='radio']:checked:after {
     .containerPic1{
         width: 90vw;
         height:60vh;
-        background-position: bottom;
     }
     .div1pic{
         top: 20px;
@@ -525,7 +524,6 @@ input[type='radio']:checked:after {
     .containerPic1{
         width: 90vw;
         height:30vh;
-        background-position: bottom;
     }
     #svgTimer {
         width: 15px;
