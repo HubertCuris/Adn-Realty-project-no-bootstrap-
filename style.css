@@ -351,7 +351,7 @@ input[type='radio']:checked:after {
         /*Head1 */
     .topContainer{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     .top{
         margin-top: 100px;
@@ -396,6 +396,7 @@ input[type='radio']:checked:after {
     .containerPic1{
         width: 90vw;
         height:60vh;
+        background-position: bottom center;
     }
     .div1pic{
         top: 20px;
@@ -486,6 +487,8 @@ input[type='radio']:checked:after {
     .topContainer{
         display: flex;
         justify-content: space-around; 
+        flex-direction: column;
+        align-items: center;
         margin-top: 70px;
     }
     .top{
@@ -500,7 +503,7 @@ input[type='radio']:checked:after {
     #city{
         font-size: 28px;
         font-weight: 700;
-        margin-top: 0;
+        margin-top: -20px;
     }
     #svgMap{
         width: 10px;
@@ -509,7 +512,7 @@ input[type='radio']:checked:after {
         font-size: 12px;
     }
     #adressContent{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
     #headDescription{
         font-size: 22px;
@@ -534,7 +537,8 @@ input[type='radio']:checked:after {
         /* Head2 */
     .containerPic1{
         width: 90vw;
-        height:30vh;
+        height:50vh;
+        background-position: bottom center;
     }
     #svgTimer {
         width: 15px;
@@ -595,6 +599,10 @@ input[type='radio']:checked:after {
         padding: 20px;
         margin-right: 0 !important;
     }
+    .radioBtn{
+        display: flex;
+        margin: 10px 0;
+    }
     #name, #firstname, #telephone, #postCode, #email{       
         width: 100%;
     }
@@ -608,7 +616,7 @@ input[type='radio']:checked:after {
     }
     #picture2{
         margin: auto;
-        box-shadow: #002A5C 5px 12px;
+        box-shadow:none;
         margin: 30px auto 30px auto;
         width: 90%;
     }
