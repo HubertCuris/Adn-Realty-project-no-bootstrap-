@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Promogim Immobilier</title>
   <!--Maquette commencée le 23/04 à 19h sans Bootstrap-->
+  <!--Projet terminé le 28/04 à 20h-->
 </head>
 <body>
   <header>
@@ -61,7 +62,7 @@
       <form action="">
         <h2>Devenez propriétaire<br>à Villemomble</h2>
         <p class="radioBtn">Civilité*
-          <input type="radio" id="gender1" name="gender" value="female">
+          <input type="radio" id="gender1" name="gender" value="female" required>
           <label for="gender1">Madame</label>
           <input type="radio" id="gender2" name="gender" value="male">
           <label for="gender2">Monsieur</label>
@@ -74,19 +75,19 @@
         </div>
         <input type="email" id="email" placeholder="Email*" required/>
         <p class="radioBtn">Je souhaite*        
-          <input type="radio" id="choice1" name="choice" value="habiter">
+          <input type="radio" id="choice1" name="choice" value="habiter" required>
           <label for="choice1">Habiter</label>                          
           <input type="radio" id="choice2" name="choice" value="investir">
           <label for="choice2">Investir</label>
         </p>
         <textarea name="message" id="message" placeholder="Votre message" wrap maxlength="400"></textarea>
         <p id="confirm">
-          <input type="checkbox" name="confirm" id="confirmCheckbox">
+          <input type="checkbox" name="confirm" id="confirmCheckbox" required>
           <label for="confirm" class="textConfirm">En cochant cette case, je consens à recevoir des offres commerciales et des informations sur les produits et services de Promogim - <a href="">Mentions sur la protection des données personnelles.</a></label>
         </p>
         <button type="submit" id="submitBtn">
           <svg version="1.1" id="svgArrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 11.9 19.4" style="enable-background:new 0 0 11.9 19.4;" xml:space="preserve">
+          viewBox="0 0 11.9 19.4" xml:space="preserve">
             <g transform="translate(2,0)">
               <path id="svgArrowPath" class="st0" d="M1.1,1.1l8.7,8.6l-8.7,8.6"/>
             </g>
